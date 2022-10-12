@@ -1,16 +1,18 @@
+import { CardUser } from './profile/userCard';
+import User from './data/user.json'
+
+import { StatisticCard } from './statistic/statisticCard';
+import data from './data/data.json';
+
+import { Friends } from './friends/friends';
+import friends from './data/friends.json'
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+  <>
+      <CardUser user={User} />
+      <StatisticCard title="Upload stats" stats={data} />
+      <Friends friends={friends} />
+  </>
   );
 };
