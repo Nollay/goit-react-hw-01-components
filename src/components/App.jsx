@@ -7,12 +7,16 @@ import data from './data/data.json';
 import { Friends } from './friends/friends';
 import friends from './data/friends.json'
 
+import { Transaction } from './transaction/transactionHistory';
+import transactions from './data/transactions.json';
+
 export const App = () => {
   return (
   <>
       <CardUser user={User} />
       <StatisticCard title="Upload stats" stats={data} />
       <Friends friends={friends} />
+      <Transaction transactions={transactions}/>
   </>
   );
 };

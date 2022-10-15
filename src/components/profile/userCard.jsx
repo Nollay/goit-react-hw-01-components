@@ -1,6 +1,6 @@
 
-import { InfoUser } from "./infoUser/info-user";
-import { StatsUser } from "./statsUser/stats-user";
+import { InfoUser } from "./info-user";
+import { StatsUser } from "./stats-user";
 
 export const CardUser = ({user: { username, tag, location, avatar, stats },
 }) => {
