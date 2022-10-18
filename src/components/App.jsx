@@ -4,7 +4,7 @@ import User from './data/user.json'
 import { StatisticCard } from './statistic/statisticCard';
 import data from './data/data.json';
 
-import { Friends } from './friends/friends';
+import { Friend } from './friends/friendsList';
 import friends from './data/friends.json'
 
 import { Transaction } from './transaction/transactionHistory';
@@ -15,7 +15,7 @@ export const App = () => {
   <>
       <CardUser user={User} />
       <StatisticCard title="Upload stats" stats={data} />
-      <Friends friends={friends} />
+      <Friend friends={friends} />
       <Transaction transactions={transactions}/>
   </>
   );

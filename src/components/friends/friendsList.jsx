@@ -1,9 +1,16 @@
-export const FriendsList = ({ friend: { avatar, name, isOnline } }) => {
-    return (
-        <>
-            <span></span>
-            <img src={avatar} alt="user" />
-            <p>{name }</p>
-        </>
-    )
-}
+import { FriendsItem } from "./friendsItem";
+import { Container, List } from "./friends.styled";
+
+
+export const Friend = ({ friends }) => {
+    return <Container>
+        <ul> {friends.map(friend => (
+        <List key={friend.id}>
+            <FriendsItem friend={friend} />
+        </List>
+            ))}
+    </ul>
+        </Container>
+};
+
+

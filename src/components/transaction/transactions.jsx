@@ -1,9 +1,10 @@
+import './transactions.css'
 export const TransactionsItem = ({ transaction: { id, type, amount, currency } }) => {
     return (
         <>
-            <th>{type }</th>
-            <th>{amount}</th>
-            <th>{currency}</th>
+            <th className='table__body__tr'>{type }</th>
+            <th className='table__body__tr'>{amount}</th>
+            <th className='table__body__tr'>{currency}</th>
         </>
     );
 };

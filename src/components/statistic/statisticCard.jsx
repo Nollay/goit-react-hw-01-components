@@ -1,15 +1,19 @@
 import { StatInfo } from "./statInfo";
+import { Title, Section, Container, List } from "./statistic.styled";
+
 export const StatisticCard = ({ title, stats }) => {
     return (
-    <section>
-        {title && <h2>{title}</h2>}
-            <ul>
+    <Container>
+    <Section>
+        {title && <Title>{title}</Title>}
+            <List>
             {stats.map(statInfo => (
             <li key={statInfo.id}>
             <StatInfo statInfo={statInfo} />
             </li>
             ))}
-            </ul>
-    </section>
+            </List>
+    </Section>
+    </Container>
 );
 };
