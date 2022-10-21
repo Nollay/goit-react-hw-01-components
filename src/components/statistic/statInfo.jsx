@@ -1,9 +1,9 @@
-import { ListItem } from "./statistic.styled";
+import { ListItem } from './statistic.styled';
 export const StatInfo = ({ statInfo: { label, percentage } }) => {
-    return (
-        <ListItem>
-            <span>{ label}</span>
-            <span>{ percentage}%</span>
-        </ListItem>
-    )
-}
+  return (
+    <ListItem>
+      <span>{label}</span>
+      <span>{percentage}%</span>
+    </ListItem>
+  );
+};
